@@ -22,7 +22,7 @@ const btnAvancar = document.getElementById("btn-avancar");
 // - passo 1 - dar um jeito de pegar o elemento HTML da seta voltar
 const btnVoltar = document.getElementById("btn-voltar");
 let cartaoAtual = 0;
-const cartoes = document.querySelectorAll(".cartao")
+const cartoes = document.querySelectorAll(".cartao");
 
 //- passo 2 - dar um jeito de identificar o clique do usúario na seta avançar
 btnAvancar.addEventListener("click", function () {
@@ -35,8 +35,6 @@ btnAvancar.addEventListener("click", function () {
 
 
   // - passo 3 - fazer aparecer o próximo cartão da lista, colocando a classe selecionado nele
-  const cartoes = document.querySelectorAll(".cartao");
-
   cartaoAtual++;
   mostrarCartao();
 
@@ -55,8 +53,6 @@ btnVoltar.addEventListener("click", function () {
   // - passo 3 - fazer aparecer o próximo cartão da lista, colocando a classe selecionado nele
   cartaoAtual--;
   mostrarCartao();
-
-
 
 });
 
